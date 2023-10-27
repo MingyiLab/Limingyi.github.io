@@ -585,3 +585,14 @@
 	};
 
 })(jQuery);
+
+document.addEventListener('DOMContentLoaded', () => {
+	const clickIcon = document.getElementById('click-icon');
+	const clickCounter = document.getElementById('click-counter');
+	let totalClicks = 0;
+  
+	clickIcon.addEventListener('click', () => {
+	  totalClicks += 1;
+	  clickCounter.textContent = totalClicks;
+	});
+  });

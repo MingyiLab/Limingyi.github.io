@@ -3219,3 +3219,24 @@ input, select, textarea {
 			}
 
 	}
+
+	.click-container {
+		text-align: center;
+		margin-top: 34px;
+		position: relative
+	  }
+	  
+	  .click-icon {
+		font-size: 30px;
+		cursor: pointer;
+	  }
+	  
+	  .click-counter {
+		font-size: 20px;
+		margin-top: 0px;
+		position: relative;
+		/* position: absolute; */
+		/* top: 100%; */
+		/* left:50; */
+		/* transfrom: translateX(-50%) */
+	  }
