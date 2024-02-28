@@ -132,7 +132,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 0 0;
+		margin: 0 0 2em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2621,7 +2621,7 @@ input, select, textarea {
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
-			margin: 0 0 2em 0;
+			margin: 10em 0 2em 0;
 		}
 
 		#header strong, #header b {
@@ -2683,16 +2683,18 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		margin-left: 35%;
-		max-width: 54em;
+		margin-left: 10%;
+		max-width: 100em;
 		padding: 0em 4em 4em 4em;
-		width: calc(100% - 35%);
+		width: calc(100% - 10%);
+		margin: 1em 0 0 0 ;
+		
 	}
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 1em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 10em 10em 10em 10em;
+			padding: 0em 0 0 0;
 			
 		}
 
@@ -3000,8 +3002,9 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 6em 3em 3em 3em;
+				padding: 10em 3em 20em 3em;
 				width: 30%;
+				margin: 10 0 10em 0
 			}
 
 				#header h1 {
