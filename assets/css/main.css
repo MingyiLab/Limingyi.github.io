@@ -3224,6 +3224,57 @@ input, select, textarea {
 	}
 
 
+	nav {
+		background: #333;
+		color: #fff;
+		padding: 0.5rem;
+		text-align: center;
+		position: relative;
+		border-radius: 0px;
+	}
+	
+	nav .nav-buttons {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		color: #fff;
+		margin-left: 12cm;
+	}
+	
+
+	nav .nav-buttons li a {
+		color: #fff; /* Set text color to white */
+		text-decoration: none;
+		padding: 0px 0px; /* Add padding */
+		background-color: #fff; /* Background color for buttons */
+		border-radius: 5px; /* Rounded corners for buttons */
+		font-size: 1rem; /* Change font size */
+		transition: background-color 0.3s; /* Smooth transition for hover effect */
+	}
+	nav .nav-buttons li a:hover {
+		color: #ddd; /* Optional: change color on hover for better visibility */
+	}
+
+
+	nav .nav-buttons li {
+		display: inline;
+		margin: 0 1rem;
+	}
+/* 	
+	nav .nav-buttons li a {
+		color: #fff;
+		text-decoration: none;
+	}
+ */
+
+ .nav-line {
+    border: 0;
+    border-top: 2px solid #fff;
+    width: 60%;
+    margin: 0.5rem auto 0;
+	margin-left: 13cm;
+}
+	
 	.click-container {
 		text-align: center;
 		margin-top: 34px;
