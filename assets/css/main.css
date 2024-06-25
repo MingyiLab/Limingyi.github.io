@@ -3260,12 +3260,7 @@ input, select, textarea {
 		display: inline;
 		margin: 0 1rem;
 	}
-/* 	
-	nav .nav-buttons li a {
-		color: #fff;
-		text-decoration: none;
-	}
- */
+
 
  .nav-line {
     border: 0;
@@ -3274,6 +3269,7 @@ input, select, textarea {
     margin: 0.5rem auto 0;
 	margin-left: 13cm;
 }
+	
 	
 	.click-container {
 		text-align: center;
