@@ -2551,7 +2551,10 @@ input, select, textarea {
 			color: #b2b2b2 !important;
 			cursor: default;
 		}
-
+		.github-icon {
+            width: 30px; /* Adjust the size as needed */
+            height: auto;
+        }
 /* Work Item */
 
 	.work-item {
