@@ -2,282 +2,357 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /* Basic */
-	html {
-		box-sizing: border-box;
-	}
-	*, *:before, *:after {
-		box-sizing: inherit;
-	}
+html {
+    box-sizing: border-box;
+    font-size: 16px; /* Base font size */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
+body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		}
+body {
+    color: #a2a2a2;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 16px; /* Fixed font size */
+    font-weight: 400;
+    line-height: 1.75em;
+}
 
-	body {
-		color: #a2a2a2;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
-		font-weight: 400;
-		line-height: 1.75em;
-	}
+a {
+    -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    border-bottom: dotted 1px;
+    color: #ddd;
+    text-decoration: none;
+}
 
-	a {
-		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #ddd;
-		text-decoration: none;
-	}
+a:hover {
+    border-bottom-color: transparent;
+    color: #333 !important;
+    text-decoration: none;
+}
 
-		a:hover {
-			border-bottom-color: transparent;
-			color: #333 !important;
-			text-decoration: none;
-		}
+strong, b {
+    color: #787878;
+    font-weight: 400;
+}
 
-	strong, b {
-		color: #787878;
-		font-weight: 400;
-	}
+em, i {
+    font-style: italic;
+}
 
-	em, i {
-		font-style: italic;
-	}
+p {
+    margin: 0 0 1em 0;
+    font-size: 14px; /* Fixed font size */
+}
 
-	p {
-		margin: 0 0 0 0;
-		font-size: 14pt;
-	}
+h1 {
+    color: #787878;
+    font-weight: 400;
+    margin: 0 0 -1em 0;
+    text-decoration: none;
+    font-size: 32px; /* Fixed font size */
+    line-height: 1.2em;
+    position: relative;
+}
 
-	h1{
-		color: #787878;
-		font-weight: 400;
-		margin: 0 0 -1em 0;
-		text-decoration: none;
-		font-size: 2em;
-		line-height: 3em;
-		position: relative;
-	}
-
-
-	h2 {
-		color: #787878;
-		font-weight: 400;
-		margin: 0 0 -1em 0;
-		text-decoration: none;
-		font-size: 2em;
-		line-height: 3em;
-		position: relative;
-		font-size: 1.5em;
-		line-height: 1.5em;
-	}
+h2 {
+    color: #787878;
+    font-weight: 400;
+    margin: 0 0 -1em 0;
+    text-decoration: none;
+    font-size: 24px; /* Fixed font size */
+    line-height: 1.2em;
+    position: relative;
+}
 
 /* Image */
 
-	.image {
-		border-radius: 0.35em;
-		border: 0;
-		display: inline-block;
-		position: relative;
-	}
+.image {
+    border-radius: 0.35em;
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
 
+.image.left {
+    float: left;
+    margin: 0 1.5em 1em 0;
+    top: 0.25em;
+}
 
-		.image.left {
-			float: left;
-			margin: 0 1.5em 1em 0;
-			top: 0.25em;
-		}
+.image.right {
+    float: right;
+    margin: 0 0 1em 1.5em;
+    top: 0.25em;
+}
 
-		.image.right {
-			float: right;
-			margin: 0 0 1em 1.5em;
-			top: 0.25em;
-		}
+.image.left, .image.right {
+    max-width: 40%;
+}
 
-		.image.left, .image.right {
-			max-width: 40%;
-		}
+.image.left img, .image.right img {
+    width: 100%;
+}
 
-			.image.left img, .image.right img {
-				width: 100%;
-			}
+.image.fit {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%;
+}
 
-		.image.fit {
-			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
-		}
+.image.fit img {
+    width: 100%;
+}
 
-			.image.fit img {
-				width: 100%;
-			}
+.image.avatar {
+    border-radius: 100%;
+}
 
-		.image.avatar {
-			border-radius: 100%;
-		}
+.image.avatar:before {
+    display: none;
+}
 
-			.image.avatar:before {
-				display: none;
-			}
-
-			.image.avatar img {
-				border-radius: 100%;
-				width: 100%;
-			}
+.image.avatar img {
+    border-radius: 100%;
+    width: 100%;
+}
 
 /* List */
 
-	ol {
-		list-style: decimal;
-		margin: 0 0 2em 0;
-		padding-left: 1.25em;
-	}
+ol {
+    list-style: decimal;
+    margin: 0 0 2em 0;
+    padding-left: 1.25em;
+}
 
-		ol li {
-			padding-left: 0.25em;
-		}
+ol li {
+    padding-left: 0.25em;
+}
 
-	ul {
-		list-style: disc;
-		margin: 0 0 2em 0;
-		padding-left: 1em;
-	}
+ul {
+    list-style: disc;
+    margin: 0 0 2em 0;
+    padding-left: 1em;
+}
 
-		ul li {
-			padding-left: 0.5em;
-		}
+ul li {
+    padding-left: 0.5em;
+}
 
-		.github-icon {
-            width: 30px; /* Adjust the size as needed */
-            height: auto;
-        }
-
-
-
+.github-icon {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+}
 
 /* Main */
 
-	.main {
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		padding-right: 10em;
-		padding-left: 10em;
-		padding-top: 2em;
-	}
-	
-	.content {
-		flex: 2;
-	}
-	.info {
-		margin-top: 0em;
-		margin-left: 1em;
-		padding: 1em; 
-		font-size: 20pt;
-	}
-	.photo {
-		flex: 0 0 20%;
-		margin-right: 10px;
-	}
-	.column {
-		font-size: 14pt;
-		list-style-type: none; /* Remove default list styling */
-		padding-left: 0; /* Remove default padding */
-		margin-left: 1em; /* Add margin to move content slightly to the right */
-		margin-top: 2em;
-	}
-	.abstract {
-		font-size: 12pt;
-		list-style-type: none; /* Remove default list styling */
-		padding-left: 0; /* Remove default padding */
-		margin-left: 1em; /* Add margin to move content slightly to the right */
-	}
-
-	img {
-		max-width: 90%;
-		height: auto;
-	}
-	
-
-
-	nav {
-	color: #ddd;
-	padding: 0rem;
-	text-align: center;
-	position: relative;
-	border-radius: 0px;
-	display: flex;
-	justify-content: center; /* Center items horizontally */
-	align-items: center; /* Center items vertically */
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-right: 10em;
+    padding-left: 10em;
+    padding-top: 2em;
 }
 
-	
-	nav .nav-buttons {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		overflow: hidden;
-		color: #fff;
-		display: flex;
-	}
-	
-	nav .nav-buttons li {
-		display: inline-block;
-		margin-left: 3rem; /* Add margin between buttons */
-	}
-	
-	nav .nav-buttons li a {
-		color: #333; /* Set text color to white */
-		text-decoration: none;
-		padding: 0.5rem 1rem; /* Add padding */
-		border-radius: 0px; /* Rounded corners for buttons */
-		font-size: 1.2rem; /* Change font size */
-		transition: background-color 0.3s; /* Smooth transition for hover effect */
-	}
-	
-	nav .nav-buttons li a:hover {
-		background-color: #ddd; /* Optional: change color on hover for better visibility */
-		color: #333; /* Change text color on hover for contrast */
-	}
+.content {
+    flex: 2;
+}
 
-	.nav-line {
-		border: 0;
-		border-top: 2px solid #333;
-		width: 50%;
-		margin-left: 18em;
-	}
-	
-		header.major {
-			text-align: center;
-		}
-		header.major nav {
-			margin-top: 1rem;
-		}
-		header.major p {
-			margin: 0 0 0 0;
-			font-size: 10pt;
-		}
+.info {
+    margin-top: 0em;
+    margin-left: 1em;
+    padding: 1em;
+    font-size: 20px; /* Fixed font size */
+}
+
+.photo {
+    flex: 0 0 20%;
+    margin-right: 10px;
+}
+
+.column {
+    font-size: 14px; /* Fixed font size */
+    list-style-type: none; /* Remove default list styling */
+    padding-left: 0; /* Remove default padding */
+    margin-left: 1em; /* Add margin to move content slightly to the right */
+    margin-top: 2em;
+}
+
+.abstract {
+    font-size: 12px; /* Fixed font size */
+    list-style-type: none; /* Remove default list styling */
+    padding-left: 0; /* Remove default padding */
+    margin-left: 1em; /* Add margin to move content slightly to the right */
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+}
 
 
-		header.minor {
-			text-align: center;
-			margin-left: -10em;
-		}
+header.major {
+    text-align: center;
+}
 
-		header.minor nav {
-			margin-top: 1rem;
-		}
-		header.minor p {
-			margin: 0 0 0 0;
-			font-size: 10pt;
-		}
+header.major nav {
+    margin-top: 1rem;
+}
+
+header.major p {
+    margin: 3em 0 0 0;
+    font-size: 10px; /* Fixed font size */
+}
+
+header.minor {
+    text-align: center;
+    margin-left: -10em;
+}
+
+header.minor nav {
+    margin-top: 1rem;
+}
+
+header.minor p {
+    margin: 0 0 0 0;
+    font-size: 10px; /* Fixed font size */
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    nav .nav-buttons {
+        display: none; /* Hide navigation buttons */
+    }
+    nav .nav-line {
+        display: none; /* Hide navigation line */
+    }
+    .nav-toggle {
+        display: block; /* Show the toggle button */
+    }
+    .main {
+        flex-direction: column; /* Stack content vertically */
+        padding: 2em 1em; /* Adjust padding */
+    }
+    .photo {
+        order: 2; /* Move photo to the bottom */
+        margin: 1em 0; /* Add margin */
+    }
+    .info {
+        order: 1; /* Keep info above the photo */
+    }
+    .column {
+        margin-top: 1em; /* Adjust margin */
+    }
+}
+nav {
+    color: #ddd;
+    padding: 0.5rem 0; /* Added padding for spacing */
+    text-align: center;
+    position: relative;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    font-size: 14px; /* Fixed font size */
+    flex-direction: column; /* Stack navigation items and line */
+}
+
+nav .nav-buttons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+}
+
+nav .nav-buttons li {
+    display: inline-block;
+    margin-left: 2rem; /* Add margin between buttons */
+}
+
+nav .nav-buttons li a {
+    color: #333; /* Set text color */
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Add padding */
+    border-radius: 0px; /* Rounded corners for buttons */
+    font-size: 14px; /* Fixed font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav .nav-buttons li a:hover {
+    background-color: #ddd; /* Optional: change color on hover for better visibility */
+    color: #333; /* Change text color on hover for contrast */
+}
+
+.nav-line {
+    border: 0;
+    border-top: 1px solid #333; /* Thicker navigation line */
+    width: 100%; /* Full width */
+    margin-top: 0.5rem; /* Margin for spacing */
+}
+
+/* Toggle Button */
+.nav-toggle {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: -20px; /* Adjusted to be higher */
+    left: 10px;
+    background-color: #ddd;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    nav .nav-buttons {
+        display: none; /* Hide navigation buttons */
+    }
+    nav .nav-line {
+        display: none; /* Hide navigation line */
+    }
+    .nav-toggle {
+        display: block; /* Show the toggle button */
+    }
+}
+
+/* Show Navigation when Toggled */
+.nav-buttons.show {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: -27px; /* Adjusted to appear below the toggle button */
+    left: 30px; /* Left side of the page */
+    background: rgba(0, 0, 0, 0); /* Transparent background */
+    padding: 10px;
+    width: auto; /* Do not cover full page */
+}
+
+.nav-buttons.show li {
+    margin: 10px 0; /* Add margin between buttons */
+}
+
+.nav-buttons.show li a {
+    color: #333; /* Change text color for visibility */
+}
+
+.nav-line.show {
+    display: block;
+}
