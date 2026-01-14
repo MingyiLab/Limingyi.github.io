@@ -30,4 +30,7 @@ Credits:
 
 	Other:
 		jQuery (jquery.com)
+
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+
+Updated: 2026Jan
